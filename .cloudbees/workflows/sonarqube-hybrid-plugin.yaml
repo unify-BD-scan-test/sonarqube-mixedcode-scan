@@ -6,7 +6,6 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'master',
       - 'feature-1'
   schedule:
     - cron: 55 23 * * 1-5
