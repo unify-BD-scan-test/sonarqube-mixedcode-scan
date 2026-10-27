@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'master'
+      - 'master',
+      - 'feature-1'
   schedule:
     - cron: 55 23 * * 1-5
 
@@ -27,4 +28,4 @@ jobs:
           url: 'https://cbsonarqube.saas-preprod.beescloud.com'
           username: ${{ secrets.SONARQUBE_USERNAME }}
           password: ${{ secrets.SONARQUBE_PASSWORD }}
-          ref: master
+          ref: feature-1
